@@ -1,0 +1,597 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+//************************NAVBAR TWEEKS************************
+//aligns menu items to the right
+#navbarNavDropdown {
+  justify-content: flex-end;
+}
+
+.navbar-light {
+	border-bottom: 1px solid $light-gray;
+}
+
+.navbar-brand {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+//gets rid of round edges on child menu elements
+.dropdown-menu {
+	border-radius: 0;
+}
+
+//force underline on sub-menu hover
+.dropdown-item:focus, .dropdown-item:hover {
+	text-decoration: underline;
+}
+
+//prevent default fade to non-accessible on pages that are not the active page
+.navbar-dark .navbar-nav .nav-link {
+  color: $dark-gray;
+}
+
+#the-menu {
+	background-color: $white !important;
+}
+
+li.active {
+	text-decoration: underline;
+	color: $dark-gray;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+
+//************************BASIC CONTENT CHOICES************************
+article a, .faculty-contact-info a {
+	text-decoration: underline;
+	color: $black;
+	text-decoration-color: $gold;
+}
+
+article a:hover {
+	color: $dark-gray;
+
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Roboto', sans-serif;	
+	font-size: 2.5em;
+	margin: 1em 0 0 0;
+	font-weight: bold;
+}
+
+body, p {
+	font-family: 'Roboto', sans-serif;
+}
+
+#secondary img, article img, figure, img, img.wp-post-image {
+	margin-bottom: 1em;
+}
+
+p {
+	//background-color: $white;
+	line-height: 1.5em;
+	//padding: 1em .4em;
+}
+
+ul {
+	background-color: $white;
+
+}
+
+.jumbotron {
+	border-radius: 0;
+}
+
+.jumbotron h2 {
+	background-color: $white;
+	font-size: 3em;
+	font-weight: 700;
+	padding: .3em;
+	display: inline-block;	
+	margin-bottom: 1em;
+}
+
+.jumbotron h3 {
+	background-color: $white;
+	font-size: 2em;
+	font-weight: 700;
+	padding: .3em;
+	display: inline-block;	
+}
+
+.custom-header-img {
+	height: 40vw;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.assistive-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+//BACKGROUND
+#full-width-page-wrapper {
+	background-image: url(../imgs/topo-right-30.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 400px 800px;
+	background-attachment: fixed;
+}
+
+
+//SUB ORGS
+
+.jumbotron.water {
+  background: url(../imgs/topographic-background-2-white.svg), linear-gradient(rgba(0, 179, 190, 0), rgba(158, 158, 158, 1));
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-color: rgba(0,0,0,0);
+}
+
+.water .card-img-top {
+	border-radius: 50%;
+	border: 2px solid $white;
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.water .card-body{
+	background-color: $white;
+	padding: .2em;
+	display: inline-block;
+	font-size: .7em;
+	
+	width: 100%;
+	margin: 1em auto;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 1em;
+}
+
+.water .card {
+	height: 100%;
+	background-color: rgba(0,0,0,0);
+	border: none;
+}
+
+
+.water a {
+	color: $dark-gray;	
+}
+
+.water a:hover {
+	text-decoration: none;
+}
+
+//Faculty page 
+
+#sorting-row {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 3em;
+	background-color: transparent !important;
+	background: transparent !important;
+}
+
+.sorting-hat button{
+	width: 250px;
+	background-color: $white;
+	border: 1px solid $aqua;
+	-webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.sorting-hat button:hover {
+	background-color: $aqua;
+	color: $white;
+	cursor: pointer;
+}
+
+.sorting-hat button.activated {
+	background-color: $aqua;
+}
+
+//NEWS SHORTCODE
+.sc-post-image {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.sc-post-title {
+	margin: 0 auto 2em .8em;
+	font-size: 1.2em;
+	font-weight: 300;
+}
+
+//content shortcode
+.content-button {
+	width: 220px;
+	border: 1px solid $dark-gray;
+	padding: 5px;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 auto; 
+}
+
+.content-button:hover {
+	background-color: $aqua;
+}
+
+
+//FOOTER 
+#wrapper-footer {
+	padding-top: 5em;
+	background-color: $dark-gray;	
+}
+
+.footer-widget{
+	background-color: $dark-gray;
+	padding-top: 3em;
+	color: $white;
+	line-height: 1em;
+}
+
+.widgetizedArea p {
+	background-color: $dark-gray;
+	color: $white;
+	padding: .2em 0;
+	margin: 0;
+}
+
+.widgetizedArea h3 {
+	color: $gold;
+	font-size: 1.2em;
+}
+
+footer a {
+	text-decoration: underline;
+	color: $gold;
+}
+
+
+//hover animation on social media icons
+footer a:hover {
+	color: $white;
+}
+
+footer .fa {
+	font-size: 2em;
+	display: inline-block;
+	margin: .2em;
+	border: 1px solid $white;
+	border-radius: 50%;
+	width: 2.2em;
+	height: 2.2em;
+	text-align: center;
+	line-height: 2.2em;
+	transition: all 0.4s ease-in-out;
+}
+
+footer .fa:hover{
+    box-shadow: 
+		inset 0 0 0 110px rgba(0,0,0, 0.8),
+		inset 0 0 0 16px rgba(255,255,255,0.8),
+		0 1px 2px rgba(0,0,0,0.7);
+}
+
+//FACULTY 
+
+.the-faculty {
+	margin-bottom: 3em;
+	border-bottom: 1px solid $aqua;
+}
+
+.faculty-title {
+	margin: 0 0 .7em 0;
+}
+
+.faculty-bio-content, .faculty-contact-info {
+	font-size: 1.3em;
+}
+
+
+//PUBLICATIONS
+
+.the-publication-row {
+	margin: 2em 0;
+	border-bottom: 1px solid $aqua;
+}
+
+h1.the-pub{
+	font-weight: 500;
+	font-size: 1.4em;
+	margin: 0;
+}
+
+
+.abstract-button {
+	transition: all 0.4s ease-in-out;
+	display: inline-block;
+	padding: .3em;
+	border: 1px solid $light-gray;
+	font-weight: 500;
+	font-size: 1.2em;
+	margin: .5em 0;
+}
+
+.abstract-button.active {
+	background-color: $aqua;
+}
+
+.abstract-button:hover {
+	cursor: pointer;
+	background-color: $aqua;
+}
+
+.abstract-status {
+	width: 1em;
+	display: inline-block;
+	margin-left: .2em;
+	transition: all .6s ease-in-out;		
+}
+
+
+.abstract-container {
+	border: 1px solid $light-gray;
+	padding: .5em;
+	margin: 1em 0;
+}
+
+ul.page-numbers {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid $light-gray;
+    width: 100%;    
+}
+
+.page-numbers li {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border: 0px;
+	padding: 5px;
+	margin-right: 10px;
+	text-align: center;
+	line-height: 1em;
+	padding-top: .5em;
+}
+
+.page-numbers li a:hover{
+	background-color: $light-gray;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+
+//CLEANSING POST META AND NAVIGATION
+.post-navigation, .type-post .entry-meta {
+	display: none;
+}
+
+
+
+
+//JUST BLOCKQUOTE
+//from https://codepen.io/iPawan/pen/emrPKP
+blockquote{
+  display:block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  
+  /*Font*/
+  font-size: 1.2em;
+  line-height: 1.2;
+  color: #666;
+
+
+  /*Borders - (Optional)*/
+  border-left-style: solid;
+  border-left-width: 15px;
+  border-right-style: solid;
+  border-right-width: 2px;    
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px; 
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+
+blockquote a{
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c;
+}
+
+blockquote a:hover{
+ color: #666;
+}
+
+blockquote em{
+  font-style: italic;
+}
+
+  /*Default Color Palette*/
+blockquote.default{ 
+  border-left-color: #656d77;
+  border-right-color: #434a53;  
+}
+
+
+//BOOTSTRAP BREAKOUT
+
+.break-out{
+  width: 100vw;
+  position: relative;
+  left: calc(-1 * (100vw - 100%) / 2);
+  color: rgba(0,0,0,.6);
+  display: block;
+}
+
+.flexy {
+  display: flex;
+  justify-content: space-between;
+}
+
+//HOVER ELEMENTS from https://raw.githubusercontent.com/IanLunn/Hover/master/css/hover.css
+
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $dark-gray;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+
+/* Reveal */
+.hvr-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-color: #2098D1;
+  border-style: solid;
+  border-width: 0;
+  -webkit-transition-property: border-width;
+  transition-property: border-width;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-reveal:hover:before, .hvr-reveal:focus:before, .hvr-reveal:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  border-width: 4px;
+}
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: $yellow;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+
+/* THE LAND OF MEDIA QUERIES */
+@media (max-width: 768px) {
+	.nav-big {
+		display: none;
+	}
+ }
+
+ @media (min-width: 769px) {
+	.nav-small {
+		display: none;
+	}
+ }
