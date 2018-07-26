@@ -14,21 +14,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php get_sidebar( 'footerfull' ); ?>
    
 
-  <div class="jumbotron water">   
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-           <a href="https://lifesciences.vcu.edu/"><h2 class="major-section hvr-underline-from-center">VCU Life Sciences</h2></a>
-          <div class="row">
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Custom Zone - Left") ) : ?><?php endif;?>
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Custom Zone - Center") ) : ?><?php endif;?>
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Custom Zone - Right") ) : ?><?php endif;?>                 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 <div class="wrapper" id="wrapper-footer">
 
 	<footer class="<?php echo esc_attr( $container ); ?>">
